@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         String email = editEmail.getText().toString();
 
         try {
-            // Replace with your local IP address
-            URL url = new URL("http://10.0.2.2/myapi/insert_user.php"); // for emulator
+
+            URL url = new URL("http://10.0.2.2/myapi/insert_user.php");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
             conn.setRequestMethod("POST");
